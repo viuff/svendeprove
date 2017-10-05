@@ -34,9 +34,11 @@ include('header.php');
         <section>
         <?php
           mysqli_query($dbcon, "SET NAMES utf8");
+
           $query = "SELECT * FROM albums ORDER BY album_sale_no DESC LIMIT 6";
           $result = mysqli_query ($dbcon, $query) or die (mysqli_error ($dbcon));
-        ?>
+
+?>
 
         <div class="panel panel-default">
           <!-- Default panel contents -->

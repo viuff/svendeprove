@@ -28,6 +28,13 @@ body {
   font-family: sans-serif, Arial, Helvetica;
   /*color: #F77F0A;*/
 }
+
+.navbar-header .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+  color:#fff;
+} 
+.navbar-header .navbar-brand:hover , .navbar-inverse .navbar-nav>li>a:hover {
+  color: #EECD06;
+}
 #centerpage{
   background-color: white;
 }

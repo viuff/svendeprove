@@ -46,7 +46,7 @@ if ($user_type  == "user") {
   </div>
 
   <!-- Table -->
-  <table class="table">
+  <table class="table showMoreTable">
     <tr>
       <th>Artist</th>
       <th>Navn</th>
@@ -59,7 +59,7 @@ if ($user_type  == "user") {
     <!-- start while løkke  -->
   <?php
   while ($row = mysqli_fetch_assoc ($result)) { ?>
-    <tr>
+    <tr class="hidden tbody">
 
       <td><a href="album.php?album=<?php echo $row['album_id']; ?>" ><?php echo $row['album_artist']; ?></a></td>
       <td><?php echo $row['album_title']; ?></td>
@@ -75,7 +75,13 @@ if ($user_type  == "user") {
     <?php } ?>
   </table>
 
+
 </section>
+<button class="showMoreBtn prev">&lt;</button>
+<button class="showMoreBtn next">&gt;</button>
+
+
+
 <?php
     echo '<pre>Indhold af row ';      print_r ($row);       echo '</pre>';
     echo '<pre>Indhold af GET ';      print_r ($_GET);      echo '</pre>';
