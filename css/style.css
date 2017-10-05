@@ -29,7 +29,7 @@ body {
   /*color: #F77F0A;*/
 }
 
-.navbar-header .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+.navbar-header .navbar-brand, .navbar-inverse .navbar-nav>li>a, .navbar-default .navbar-nav>li>a {
   color:#fff;
 } 
 .navbar-header .navbar-brand:hover , .navbar-inverse .navbar-nav>li>a:hover {
@@ -55,4 +55,18 @@ a:hover {
 }
 a:active {
     text-decoration: underline;
+}
+
+
+.shoppingSuccess {
+  background-color: #EECD06;
+  margin-top:-20px;
+  margin-bottom: 4px;
+}
+.shoppingSuccess h2 {
+  cursor:pointer;
+  color:#fff;
+  margin:0;
+  padding:4px 0;
+  text-align: center;
 }
