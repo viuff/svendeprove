@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: #ffff;
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 10pt;
+  line-height: 14pt;
+}
+/*.panel-heading, .panel, .panel-default, .container, .sidenav{
+  background-color: #0398DA;
+  background-color: #EECD06;
+  background-color: #F77F0A;
+  background-color: #0SD675;
+  background-color: #F347E7;
+}
+.container{
+  background-color: #F77F0A;
+}*/
+.TopBanner{
+  /*background-color: #F347E7;*/
+  background-color: #0398DA;
+  background-size: 100%;
+}
+.navbar{
+  background-color: #0398DA;
+  font-family: sans-serif, Arial, Helvetica;
+  /*color: #F77F0A;*/
+}
+#centerpage{
+  background-color: white;
+}
+#footer{
+  background-color: white;
+  color: #F77F0A;
+  font-family: sans-serif, Arial, Helvetica;
+}
+/*glemt pw link på login siden*/
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}

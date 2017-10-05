@@ -1,0 +1,14 @@
+--------------Svendeprove---------------------
+
+Lav en disposition, med kopi til lære og sensor, ca. 20-30 min.
+- så det er muligt at tage teten og snakke om de ting som er lavet færdig
+
+mappestruktur, se gamle projekter
+rapport, set op med indholds fortegenlse
+logind, set det op på forhånd, formular -> adm side (med session-url sikring)+formularvalidering
+setop DB med brugertabel, med connection
+
+evt:
+opret bruger ol.
+billedupload med billedmapper
+glemt pw
