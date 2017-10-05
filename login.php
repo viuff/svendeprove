@@ -82,20 +82,28 @@
 		//udføre forespørgelsen til db
 			$result=mysqli_query ($dbcon,$query) or die('query problem' . mysqli_error($dbcon));
 			//husk tjekker kode på hver enkelt beskyttet side!
-
 			if (mysqli_num_rows($result) > 0) {//retunere antal af rækker hvor forespørgelsen er sand
 				$row = mysqli_fetch_assoc ($result); //henter værdirerene fra forespørgselen
-	    	$_SESSION['adgang'] = true;//laver en nøgle, her hedder den adgang med værdien "true"
+		    	$_SESSION['adgang'] = true;//laver en nøgle, her hedder den adgang med værdien "true"
 				$_SESSION['user_email'] = $_POST['email'];
 				$_SESSION['level'] = $row['user_role'];
-
 				if ($row['user_role'] == 1) { //ser om der står 0 eller 1 i member_adm = er brugeren adm
-					die(header('location: adm.php'));
+
+					//header('location: adm.php');
+					echo '<script type="text/javascript">
+					window.location = "/adm.php"
+			   			</script>';
+					die();
 				} else {
-					die(header('location: user.php'));
+					//header('location: user.php');
+					echo '<script type="text/javascript">
+					window.location = "/user.php"
+			   			</script>';
+					die();
 				}
 			}
 		}
+		
 		 ?>
 <!--################ -html 0pret bruger- ######################-->
 		<h2>Opret ny bruger</h2>
